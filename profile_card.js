@@ -154,7 +154,9 @@ body {
 </style>
 `
 
-const cardTemplate = `<html>` +
+
+function createCard(profileData){
+    var cardTemplate = `<html>` +
     cardStyle + 
     `<div class="border-card">` +
     `<div class="row bottom-border">` +
@@ -209,15 +211,19 @@ const cardTemplate = `<html>` +
     `</div>` +
     `</div>` +
     `</html>`;
-
-
-function createCard(profileData){
     return cardTemplate;
 }
 function profileCard(profileData) {
+    const fs = require('fs')
     var result = "";
-    if (profileDataNew?.name != "" && profileDataNew?.carrer != "" && profileDataNew?.description != "" && profileDataNew?.email_user != "" && profileDataNew?.phone_user != "" && profileDataNew?.username != "") {
-        return createCard()
+    if (profileData?.name != "" && profileData?.carrer != "" && profileData?.description != "" && profileData?.email_user != "" && profileData?.phone_user != "" && profileData?.username != "") {
+        fs.writeFile('./'+profileData.name+'_card.html', createCard(profileData), err => {
+            if (err) {
+              console.error(err)
+              return
+            }
+            //file written successfully
+          })
     }
     return false;
 }
