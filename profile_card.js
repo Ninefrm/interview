@@ -220,9 +220,9 @@ function profileCard(profileData) {
         fs.writeFile('./'+profileData.name+'_card.html', createCard(profileData), err => {
             if (err) {
               console.error(err)
-              return
+              return false;
             }
-            //file written successfully
+            return true;
           })
     }
     return false;

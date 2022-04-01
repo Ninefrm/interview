@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Ninefrm/interview#readme",
   "dependencies": {
+    "chai": "^4.3.6",
     "jest": "^27.5.1",
     "node": "^17.7.2"
   }
