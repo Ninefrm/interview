@@ -3,8 +3,43 @@ body {
     font-size: 1vw;
 }
 
+.column {
+    float: left;
+}
+
+.left {
+    width: 27%;
+}
+
+.right {
+    width: 73%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.t-col{
+    float: left;
+    width: 32.33%; 
+    height: 30vh;
+    border:1vh solid;
+}
+
 .justify-text{
     text-align: justify;
+}
+
+.bottom-border{
+    border-bottom: 5px solid;
+}
+
+.inline-icon {
+    vertical-align: bottom;
+    font-size: 2vw !important;
 }
 
 .circle-div {
@@ -26,6 +61,11 @@ body {
     text-align: left;
     font-size: 2vw;
     font-weight: lighter;
+}
+
+.low-title {
+    font-size: 2vw;
+    font-weight: bold;
 }
 
 .profile-picture {
