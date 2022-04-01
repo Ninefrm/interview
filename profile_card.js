@@ -213,10 +213,16 @@ function createCard(profileData) {
         `</html>`;
     return cardTemplate;
 }
+
+function checkProfileData(profileData){
+    if(profileData?.name == undefined || profileData?.carrer == undefined || profileData?.profile_description == undefined || profileData?.email_user == undefined || profileData?.phone_user == undefined || profileData?.username == undefined) return false
+    if(profileData.name == "" && profileData.carrer == "" || profileData.profile_description == "" || profileData.email_user == "" || profileData.phone_user == "" || profileData.username == "") return false
+    return true
+}
 function profileCard(profileData) {
     const fs = require('fs')
     var result = "";
-    if (profileData?.name != "" && profileData?.carrer != "" && profileData?.description != "" && profileData?.email_user != "" && profileData?.phone_user != "" && profileData?.username != "") {
+    if (checkProfileData(profileData)) {
         fs.writeFile('./' + profileData.name + '_card.html', createCard(profileData), err => {
             if (err) {
                 console.error(err)
