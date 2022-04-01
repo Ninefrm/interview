@@ -1,9 +1,3 @@
-
-document.getElementById('button').onclick = function () {
-    profileData.name = "Juan Perez"
-    console.log(profileData)
-};
-
 var profileData = {
     name: "Fonseca Romero Samuel Maximiliano",
     carrer: "COMPUTER SCIENCE ENGINNER",
@@ -22,7 +16,7 @@ const cardTemplate = `<div class="row bottom-border">` +
     `</div>` +
     `<div class="column right">` +
     `<div class="profile-name">` +
-    `<span>${profileData.name}</span>` +
+    `<span id="profileData_name">${profileData.name}</span>` +
     `<div class="profile-name-carrer">` +
     `<span>${profileData.carrer}</span>` +
     `</div>` +
@@ -72,3 +66,10 @@ class profileCard extends HTMLElement {
 
 customElements.define('profile-card', profileCard);
 
+document.getElementById('button').onclick = function () {
+    profileData.name = "Juan Perez"
+    console.log(profileData)
+    var elem = document.getElementById('profileData_name');
+    console.log(elem)
+
+};
