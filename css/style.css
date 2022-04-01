@@ -117,3 +117,8 @@ body {
     vertical-align: bottom;
     font-size: 7vw !important;
 }
+
+.middle-icon-text{
+    font-size: 1vw;
+    font-weight: bold;
+}
