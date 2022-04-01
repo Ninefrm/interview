@@ -3,6 +3,31 @@ body {
     font-size: 1vw;
 }
 
+.justify-text{
+    text-align: justify;
+}
+
+.circle-div {
+    position: relative;
+    width: 90%;
+    padding-bottom: 90%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-name {
+    padding: 3vh 0;
+    text-align: left;
+    font-size: 5vw;
+    font-weight: bold;
+}
+
+.profile-name-carrer {
+    text-align: left;
+    font-size: 2vw;
+    font-weight: lighter;
+}
+
 .profile-picture {
     position: absolute;
     object-fit: cover;
