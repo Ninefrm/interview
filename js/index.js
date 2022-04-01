@@ -216,7 +216,7 @@ document.getElementById('button').onclick = function () {
         name: document.getElementById('full_name').value,
         carrer: document.getElementById('carrer_name').value,
         description: document.getElementById('profile_description').value,
-        picture: "https://picsum.photos/200/300?random="+Math.random(),
+        picture: "https://picsum.photos/200/300?random="+Math.random(), //Preventing creating a file upload function 
         email_user: document.getElementById('email_user').value,
         phone_user: document.getElementById('phone_user').value,
         username: document.getElementById('username_user').value,
