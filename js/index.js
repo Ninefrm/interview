@@ -148,7 +148,8 @@ body {
 </style>
 `
 
-const cardTemplate = cardStyle + 
+const cardTemplate = `<html>` +
+    cardStyle + 
     `<div class="border-card">` +
     `<div class="row bottom-border">` +
     `<div class="column left">` +
@@ -200,7 +201,8 @@ const cardTemplate = cardStyle +
     `</div>` +
     `</div>` +
     `</div>` +
-    `</div>`;
+    `</div>` +
+    `</html>`;
 
 
 class profileCard extends HTMLElement {
@@ -234,6 +236,7 @@ document.getElementById('button').onclick = function () {
         document.getElementById('profile-phone').setAttribute('href', "https://wa.me/" + profileDataNew.phone_user);
         document.getElementById('profile-username_user').innerHTML = profileDataNew.username;
         document.getElementById('profile-linkedin').setAttribute('href', "https://www.linkedin.com/in/" + profileDataNew.username);
+        console.log(cardTemplate)
     }else{
         alert("Please fill all the fields")
     }
