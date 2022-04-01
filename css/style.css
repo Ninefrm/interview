@@ -22,9 +22,16 @@ body {
     clear: both;
 }
 
-.t-col {
+.two-col {
     float: left;
-    width: 32.33%;
+    width: 49%;
+    height: 30vh;
+    padding-left: 1vh;
+}
+
+.three-col {
+    float: left;
+    width: 49%;
     height: 30vh;
     padding-left: 1vh;
 }
