@@ -76,15 +76,20 @@ document.getElementById('button').onclick = function () {
         phone_user: document.getElementById('phone_user').value,
         username: document.getElementById('username_user').value,
     };
-    document.getElementById('profile-name').innerHTML = profileDataNew.name;
-    document.getElementById('profile-carrer').innerHTML = profileDataNew.carrer;
-    document.getElementById('profile-description').innerHTML = profileDataNew.description;
-    // document.getElementById('profile-picture').value = profileDataNew.picture;
-    document.getElementById('profile-email').innerHTML = profileDataNew.email_user;
-    document.getElementById('profile-email').setAttribute('href', "mailto:"+profileDataNew.email_user+"?subject=Card contact");
-    document.getElementById('profile-phone').innerHTML = profileDataNew.phone_user;
-    document.getElementById('profile-phone').setAttribute('href', "https://wa.me/"+profileDataNew.phone_user);
-    document.getElementById('profile-username_user').innerHTML = profileDataNew.username;
-    document.getElementById('profile-linkedin').setAttribute('href', "https://www.linkedin.com/in/"+profileDataNew.username);
+
+    if (profileDataNew?.name != "" && profileDataNew?.carrer != "" && profileDataNew?.description != "" && profileDataNew?.email_user != "" && profileDataNew?.phone_user != "" && profileDataNew?.username != "") {
+        document.getElementById('profile-name').innerHTML = profileDataNew.name;
+        document.getElementById('profile-carrer').innerHTML = profileDataNew.carrer;
+        document.getElementById('profile-description').innerHTML = profileDataNew.description;
+        // document.getElementById('profile-picture').value = profileDataNew.picture;
+        document.getElementById('profile-email').innerHTML = profileDataNew.email_user;
+        document.getElementById('profile-email').setAttribute('href', "mailto:" + profileDataNew.email_user + "?subject=Card contact");
+        document.getElementById('profile-phone').innerHTML = profileDataNew.phone_user;
+        document.getElementById('profile-phone').setAttribute('href', "https://wa.me/" + profileDataNew.phone_user);
+        document.getElementById('profile-username_user').innerHTML = profileDataNew.username;
+        document.getElementById('profile-linkedin').setAttribute('href', "https://www.linkedin.com/in/" + profileDataNew.username);
+    }else{
+        alert("fill all the fields")
+    }
 
 };
