@@ -31,13 +31,17 @@ body {
 
 .three-col {
     float: left;
-    width: 49%;
+    width: 31.3%;
     height: 30vh;
     padding-left: 1vh;
 }
 
 .justify-text {
     text-align: justify;
+}
+
+.center-text {
+    text-align: center;
 }
 
 .bottom-border {
@@ -107,4 +111,9 @@ body {
 
 .no-resize{
     resize: none;
+}
+
+.middle-icon{
+    vertical-align: bottom;
+    font-size: 7vw !important;
 }
