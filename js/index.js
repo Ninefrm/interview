@@ -235,7 +235,7 @@ document.getElementById('button').onclick = function () {
         document.getElementById('profile-username_user').innerHTML = profileDataNew.username;
         document.getElementById('profile-linkedin').setAttribute('href', "https://www.linkedin.com/in/" + profileDataNew.username);
     }else{
-        alert("fill all the fields")
+        alert("Please fill all the fields")
     }
 
 };
