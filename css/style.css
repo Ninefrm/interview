@@ -26,7 +26,7 @@ body {
     float: left;
     width: 32.33%; 
     height: 30vh;
-    border:1vh solid;
+    padding-left: 1vh;
 }
 
 .justify-text{
@@ -34,6 +34,7 @@ body {
 }
 
 .bottom-border{
+    padding: 3vh;
     border-bottom: 5px solid;
 }
 
