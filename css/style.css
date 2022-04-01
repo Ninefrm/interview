@@ -22,18 +22,18 @@ body {
     clear: both;
 }
 
-.t-col{
+.t-col {
     float: left;
-    width: 32.33%; 
+    width: 32.33%;
     height: 30vh;
     padding-left: 1vh;
 }
 
-.justify-text{
+.justify-text {
     text-align: justify;
 }
 
-.bottom-border{
+.bottom-border {
     padding: 3vh;
     border-bottom: 5px solid;
 }
@@ -74,4 +74,26 @@ body {
     object-fit: cover;
     width: 100%;
     height: 100%;
+}
+
+.input-container {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-bottom: 5vh;
+}
+
+.icon {
+    padding: 3vw;
+    background: grey;
+    color: white;
+    min-width: 3vw;
+    text-align: center;
+}
+
+.input-field {
+    width: 100%;
+    padding: 3vw;
+    outline: none;
 }
