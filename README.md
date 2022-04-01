@@ -15,3 +15,19 @@ can be configured and reused easily, it's interactive and of course pretty.
 
 - Consider creating a branch and storing your work there
 - Use your imagination and feel free to ask questions
+___
+
+## SMFR
+
+Remember init the project:<pre><code>npm i
+</code></pre>
+- Create my own profile-card: <pre><code>npm start
+</code></pre>
+- Test cases: <pre><code>npm run test
+</code></pre>
+
+## Considerations:
+- My html file with javascript, css vanilla has inputs to be able to test the layer directly there.
+- My test cases create html files to check that they are usable anywhere.
+- Simplicity is pretty to me.
+- All information except mine is fake.
