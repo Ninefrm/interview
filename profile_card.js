@@ -216,7 +216,7 @@ function createCard(profileData) {
 
 function checkProfileData(profileData){
     if(profileData?.name == undefined || profileData?.carrer == undefined || profileData?.profile_description == undefined || profileData?.email_user == undefined || profileData?.phone_user == undefined || profileData?.username == undefined) return false
-    if(profileData.name == "" && profileData.carrer == "" || profileData.profile_description == "" || profileData.email_user == "" || profileData.phone_user == "" || profileData.username == "") return false
+    if(profileData.name == "" || profileData.carrer == "" || profileData.profile_description == "" || profileData.email_user == "" || profileData.phone_user == "" || profileData.username == "") return false
     return true
 }
 function profileCard(profileData) {
