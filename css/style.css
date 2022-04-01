@@ -97,3 +97,7 @@ body {
     padding: 3vw;
     outline: none;
 }
+
+.no-resize{
+    resize: none;
+}

@@ -26,10 +26,10 @@
 					<div class="input-container">
 						<i class="icon material-icons">account_circle</i>
 						<input class="input-field" type="text" placeholder="Full Name" name="full_name">
-					  </div>
-					<div class="profile-name-carrer">
-						<input type="text" id="carrer_name" name="carrer_name">
-						<label for="carrer_name">Carrer Name</label>
+					</div>
+					<div class="input-container">
+						<i class="icon material-icons">school</i>
+						<input class="input-field" type="text" placeholder="Carrer name" name="carrer_name">
 					</div>
 				</div>
 			</div>
@@ -38,31 +38,37 @@
 
 			<div class="t-col">
 				<span class="low-title">PROFILE</span>
-				<input type="text" id="profile_description" name="profile_description">
-				<label for="carrer_name">Profile description</label>
+				<div class="input-container">
+					<i class="icon material-icons">record_voice_over</i>
+					<textarea class="input-field no-resize" placeholder="Profile Descripion" name="profile_description">
+					</textarea>
+				</div>
 			</div>
 			<div class="t-col">
 				<span class="low-title">PERSONAL DETAILS</span>
-				<p><i class="inline-icon material-icons">cake</i>
-					<input type="text" id="birth_date" name="birth_date">
-					<label for="carrer_name">Birth-date</label>
-				</p>
+				<div class="input-container">
+					<i class="icon material-icons">cake</i>
+					<input class="input-field" type="date" placeholder="Birth date Descripion" name="birth_date">
+				</div>
 			</div>
 			<div class="t-col">
 				<span class="low-title">CONTACT</span>
-				<p><i class="inline-icon material-icons">email</i>
-					<input type="text" id="email_user" name="email_user">
-					<label for="email_user">Email</label>
-				</p>
-				<p></p><i class="inline-icon material-icons">local_phone</i>
-					<input type="text" id="phone_user" name="phone_user">
-					<label for="phone_user">Telephone</label>
-				</p>
-				<p><i class="inline-icon material-icons">person_add</i>
-					<input type="text" id="username_user" name="username_user">
-					<label for="username_user">Social media username</label>
-				</p>
+				<div class="input-container">
+					<i class="icon material-icons">email</i>
+					<input class="input-field" type="text" placeholder="Email" name="email_user">
+				</div>
+				<div class="input-container">
+					<i class="icon material-icons">local_phone</i>
+					<input class="input-field" type="text" placeholder="Phone number" name="phone_user">
+				</div>
+				<div class="input-container">
+					<i class="icon material-icons">person_add</i>
+					<input class="input-field" type="text" placeholder="Social media username" name="username_user">
+				</div>
 			</div>
+		</div>
+		<div>
+			<button>Submit</button>
 		</div>
 	</form>
 
