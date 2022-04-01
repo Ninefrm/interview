@@ -109,16 +109,21 @@ body {
     outline: none;
 }
 
-.no-resize{
+.no-resize {
     resize: none;
 }
 
-.middle-icon{
+.middle-icon {
     vertical-align: bottom;
     font-size: 7vw !important;
 }
 
-.middle-icon-text{
+.middle-icon-text {
     font-size: 1vw;
     font-weight: bold;
+}
+
+.border-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
 }

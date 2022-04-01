@@ -8,7 +8,8 @@ var profileData = {
     username: "Ninefrm",
 };
 
-const cardTemplate = `<div class="row bottom-border">` +
+const cardTemplate = `<div class="border-card">` +
+    `<div class="row bottom-border">` +
     `<div class="column left">` +
     `<div class="circle-div">` +
     `<img class="profile-picture" id="profile-picture" src="${profileData.picture}" alt="Profile picture">` +
@@ -53,6 +54,7 @@ const cardTemplate = `<div class="row bottom-border">` +
     `</svg>` +
     `<p class="middle-icon-text" id="profile-username_user">${profileData.username}</p>` +
     `</a>` +
+    `</div>` +
     `</div>` +
     `</div>` +
     `</div>` +
