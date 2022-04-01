@@ -1,0 +1,25 @@
+{
+  "name": "interview",
+  "version": "1.0.0",
+  "description": "Please follow these steps to complete this exercise.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node index.js",
+    "berlin": "node berlin_clock.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ninefrm/interview.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ninefrm/interview/issues"
+  },
+  "homepage": "https://github.com/Ninefrm/interview#readme",
+  "dependencies": {
+    "jest": "^27.5.1",
+    "node": "^17.7.2"
+  }
+}
