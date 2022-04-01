@@ -219,18 +219,22 @@ function checkProfileData(profileData){
     if(profileData.name == "" || profileData.carrer == "" || profileData.profile_description == "" || profileData.email_user == "" || profileData.phone_user == "" || profileData.username == "") return false
     return true
 }
-function profileCard(profileData) {
+
+function writeToFile(profileData){
     const fs = require('fs')
+    fs.writeFile('./' + profileData.name + '_card.html', createCard(profileData), err => {
+        if (err) {
+            console.error(err)
+            return false;
+        }
+        return true;
+    })
+    return true;
+}
+function profileCard(profileData) {
     var result = "";
     if (checkProfileData(profileData)) {
-        fs.writeFile('./' + profileData.name + '_card.html', createCard(profileData), err => {
-            if (err) {
-                console.error(err)
-                return false;
-            }
-            return true;
-        })
-        return true
+        return writeToFile(profileData)
     }
     return false;
 }
