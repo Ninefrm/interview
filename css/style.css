@@ -1,0 +1,11 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1vw;
+}
+
+.profile-picture {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
